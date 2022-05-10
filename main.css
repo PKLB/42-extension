@@ -3,3 +3,17 @@ html body {
     color: #2c2c34;
     background: url(https://wallpaperaccess.com/full/42613.jpg);
 }
+
+.link_sup
+{
+	width: 40px;
+	height: 40px;
+	z-index: 99999;
+	color: #525767;
+}
+
+.link_sup:hover
+{
+	background: white;
+	color: #fff;
+}

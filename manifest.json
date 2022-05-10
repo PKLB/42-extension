@@ -1,25 +1,25 @@
 {
-	"manifest_version": 2,
-	"name": "DM42",
-	"description": "Dark mode for 42 intra"
-	,"version": "1.0"
-	,"icons": {
-	  "16": "/imgs/16x16.png"
-	 ,"48": "/imgs/48x48.png"
-	 , "128": "/imgs/128x128.png"
+	"manifest_version": 3,
+	"name": "Pimp my intra",
+	"description": "Dark mode for 42 intra",
+	"version": "1.4.42",
+	"icons": {
+		"16": "/imgs/16x16.png",
+		"48": "/imgs/48x48.png",
+		"128": "/imgs/128x128.png"
 	},
-	"page_action": {
-	  "default_icon": {
-		"16": "/imgs/16x16.png"
-		,"48": "/imgs/48x48.png"
-	   ,"128": "/imgs/128x128.png"
-	}
-},
+	"action": {
+		"default_icons": {
+			"16": "/imgs/16x16.png",
+			"48": "/imgs/48x48.png",
+			"128": "/imgs/128x128.png"
+		}
+	},
 	"content_scripts": [
-	{
-		"matches":["https://profile.intra.42.fr/*"],
-		"css": ["main.css"],
-		"js": ["script.js"]
-	}
+		{
+			"matches":["https://*.intra.42.fr/*"],
+			"css": ["main.css"],
+			"js": ["script.js"]
+		}
 	]
 }
