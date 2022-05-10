@@ -15,7 +15,6 @@ var elements = [
 	}
 ];
 
-// let element_class 1=
 elements.forEach((item) => {
 	var obj = document.createElement("li");
 	obj.innerHTML = "<a href=\"" + item["link"] + "\"><span><img class=\"" + item["class"] + "\" src=\"" + item["svg"] + "\" /></span><span class=\"visible-overlay\">" + item["visible-overlay"] + "</span></a>";
