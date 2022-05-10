@@ -2,7 +2,17 @@
 	"manifest_version": 3,
 	"name": "Pimp my intra",
 	"description": "Dark mode for 42 intra",
-	"version": "1.4.42",
+	"version": "1.4.42.5",
+	"content_security_policy": 
+	{
+		"": "script-src 'self' 'https://cdn.jsdelivr.net'; object-src 'self'; script-src-elem 'self'"
+	},
+	"permissions": [
+		"storage"
+	],
+	"background": {
+	  "service_worker": "background.js"
+	},
 	"icons": {
 		"16": "/imgs/16x16.png",
 		"48": "/imgs/48x48.png",
@@ -13,7 +23,8 @@
 			"16": "/imgs/16x16.png",
 			"48": "/imgs/48x48.png",
 			"128": "/imgs/128x128.png"
-		}
+		},
+		"default_popup": "popup/index.html"
 	},
 	"content_scripts": [
 		{

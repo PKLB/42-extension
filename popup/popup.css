@@ -1,0 +1,22 @@
+
+body {
+	background: none;
+	margin: 0;
+	padding: 0;
+	border: 5px solid rgb(0, 0, 0);
+	border-radius: 2px;
+	color: white;
+	background: url(https://i.pinimg.com/originals/f4/34/e8/f434e86cdc40ef068b7783d150f8a65c.gif) fixed ;
+}
+
+.container {
+	width: 300px;
+	height: 350px;
+}
+h1{
+	text-align: center;
+}
+
+h2 {
+	color: red;
+}
