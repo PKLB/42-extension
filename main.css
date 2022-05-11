@@ -24,3 +24,8 @@ html body {
 {
 	filter: invert(96%) sepia(0%) saturate(90%) hue-rotate(114deg) brightness(105%) contrast(105%);
 }
+
+.col
+{
+
+}

@@ -16,7 +16,20 @@ let params = {
 	]
 };
 
+let params_col = {
+	"background": "",
+	"col": [
+		{
+			"class": "col col_1",
+		},
+		{
+			"class": "col col_2",
+		}
+	]
+};
+
 chrome.runtime.onInstalled.addListener(() => {
 	chrome.storage.sync.set({ params });
+	chrome.storage.sync.set({ params_col });
 	console.log('Default parameters set');
 });
