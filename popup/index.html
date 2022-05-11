@@ -4,14 +4,28 @@
 		<title>Popup - PimpMyIntra</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<script src="bootstrap/bootstrap.bundle.min.js"></script>
+		<script src="bootstrap/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="popup.css">
 	</head>
-	<body>
-		<h2>Salut</h2>
-		<ul id="ul"></ul>
+	<body class="bg-dark text-light">
+		<h4>PimpMyIntra</h4>
+		<nav id="navbar">
+			<ul>
+				<li><a class="FrameButtons" href="#" data-target="links_container">Links</a></li>
+				<li><a class="FrameButtons" href="#" data-target="background_container">Background</a></li>
+				<li><a class="FrameButtons" href="#" data-target="other_container">Others</a></li>
+			</ul>
+		</nav>
+		<div class="container active" id="links_container">
+			<ul id="links_list" class="list-group">
+			</ul>
+		</div>
+		<div class="container" id="background_container">
+		</div>
+		<div class="container" id="other_container">
+		</div>
 		<script src="popup.js"></script>
 	</body>
 </html>

@@ -1,9 +1,36 @@
 let div = document.getElementById("ul");
 
-chrome.storage.sync.get("params", ({ params }) => {
-	params['links'].forEach(link => {
-		var li = document.createElement('li');
-		li.innerText = link['visible-overlay'];
-		div.append(li);
+document.querySelectorAll(".FrameButtons").forEach(function (a) {
+	a.addEventListener("click", function (item) {
+		item.preventDefault();
+		document.querySelectorAll(".container").forEach(function (container) {
+			container.classList.remove("active");
+		});
+		document.getElementById(item.srcElement.dataset.target).classList.add("active");
 	});
+});
+
+chrome.storage.sync.get("params", ({ params }) => {
+	const links_list = document.getElementById("links_list");
+
+	params['links'].forEach(function (link) {
+		var close = document.createElement('button');
+		var li = document.createElement('li');
+		close.type = "button";
+		close.classList.add("btn-close", "links_delete_button");
+		close.setAttribute("aria-label", "Delete");
+		li.classList.add("list-group-item");
+		li.innerText = link["visible-overlay"];
+		li.append(close);
+		links_list.append(li);
+	});
+
+	var li = document.createElement('li');
+	li.classList.add("list-group-item");
+	li.innerText = "Add";
+	links_list.append(li);
+
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl);});
+
 });
