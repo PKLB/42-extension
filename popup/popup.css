@@ -50,15 +50,16 @@ h4::after, h4::before {
 	padding: 5px 10px 10px 10px;
 	width: 100%;
 	visibility: hidden;
+	position: absolute;
 }
 
 .container.active {
 	visibility: visible;
 }
 
-#links_container {background: red;}
+/* #links_container {background: red;}
 #background_container {background: blue;}
-#other_container {background: green;}
+#other_container {background: green;} */
 
 #links_container ul,
 #links_container li {
@@ -66,6 +67,20 @@ h4::after, h4::before {
 }
 
 .links_delete_button {
+	position: absolute;
+	right: 8px;
+}
+
+#addLink {
+	display: flex;
+	flex-direction: row;
+}
+
+#addLink input {
+	width: 300px;
+}
+
+#addLinkButton {
 	position: absolute;
 	right: 8px;
 }
