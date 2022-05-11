@@ -9,7 +9,7 @@ let params = {
 		},
 		{
 			"class": "link_sup_test",
-			"link": "https://unpkg.com/ionicons@5.5.2/dist/svg/fish-outline.svg",
+			"link": "https://github.com/PKLB",
 			"svg": "https://media3.giphy.com/media/eHjrC6X9zDIMI0alnP/giphy.webp?cid=ecf05e47e0hycnon5xyu7wx4w7x6bfvb29pde5qsnrx1w68v&rid=giphy.webp&ct=s",
 			"visible-overlay": "Linlok"
 		}
